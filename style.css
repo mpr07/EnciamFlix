@@ -1,0 +1,129 @@
+/*Bàsic*/
+* {
+  padding: 0px;
+  font-family: candara, arial, helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: candara, arial, helvetica;
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+/*Base pàgina*/
+.base {
+  background-color: #ffffffb3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+/*Encapçalament pàgina inicial*/
+
+.initial-heading {
+  display: flex;
+  align-items: center;
+}
+
+.initial-heading img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: center;
+  height: 850px;
+}
+
+.initial-heading .initial-img-text {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  padding: 20px;
+}
+
+.initial-img-text h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 575px;
+}
+
+/*Menú de navegació*/
+
+.button {
+  background-color: #60bc19;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+}
+
+.menu-heading {
+  display: flex;
+  background: #008571;
+  min-height: 150px;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 25px -22px black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.logo h2 {
+  font-family: candara;
+  padding-left: 30px;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+nav ul li a {
+  font-weight: 600;
+  padding-right: 10px;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
