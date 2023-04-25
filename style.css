@@ -9,8 +9,8 @@ body {
   font-family: candara, arial, helvetica;
   margin: 0px;
   padding: 0px;
-  background-size: cover;
-  background-image: url(https://img.ccma.cat/multimedia/jpg/0/0/1557136173200.jpg);
+  background-size: 100% 100%;
+  background-image: url("enciamfons2.png");
 }
 
 a {
@@ -127,7 +127,13 @@ a {
 }
 
 div#carouselExample {
-    width: 1000px;
+    max-width: 1000px;
+	height: auto;
+}
+
+img.caroselimg {
+  width: 100%;
+  height: auto;
 }
 
 nav ul li {
