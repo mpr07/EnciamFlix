@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+.menu-base {
   font-family: candara, arial, helvetica;
   margin: 0px;
   padding: 0px;
@@ -81,7 +81,7 @@ a {
 
 .menu-heading {
   display: flex;
-  background: #5aleb3;
+  background: #5a1eb3;
   min-height: 150px;
   width: 100%;
   z-index: 100;
@@ -105,30 +105,30 @@ a {
 }
 
 .fons-teal-200 {
-	background: #a6e9d5;
+  background: #a6e9d5;
 }
 
 .fons-teal-400 {
-	background: #4dd4ac;
+  background: #4dd4ac;
 }
 
 .dropdown-item:hover {
-	color: #fff;
-	background: #13795b;
-	border: 2px solid #13795b;
-	border-radius: 5px;
+  color: #fff;
+  background: #13795b;
+  border: 2px solid #13795b;
+  border-radius: 5px;
 }
 
 .dropdown-item:active {
-	color: #fff;
-	background: #13795b;
-	border: 2px solid #732edc;
-	border-radius: 5px;
+  color: #fff;
+  background: #13795b;
+  border: 2px solid #732edc;
+  border-radius: 5px;
 }
 
 div#carouselExample {
-    max-width: 1000px;
-	height: auto;
+  max-width: 1000px;
+  height: auto;
 }
 
 img.caroselimg {
@@ -148,4 +148,76 @@ nav ul li a {
   padding: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.album-base {
+  background-color: #ffffffb3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+
+.anime-base {
+  font-family: candara, arial, helvetica;
+  margin: 0px;
+  padding: 0px;
+  background-size: 100% 100%;
+  background-image: url("fons-pelis-anime.jpeg");
+}
+
+.titol_pag {
+  font-weight: 300 !important;
+  color: white;
+}
+
+.text_pag {
+  font-size: 1.25rem;
+  font-weight: 300;
+  --bs-text-opacity: 1;
+  color: white;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
 }
