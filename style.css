@@ -10,6 +10,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-size: cover;
+  background-image: url(https://img.ccma.cat/multimedia/jpg/0/0/1557136173200.jpg);
 }
 
 a {
@@ -103,20 +104,35 @@ a {
   padding-left: 30px;
 }
 
-nav {
-  float: left;
+.fons-teal-200 {
+	background: #a6e9d5;
 }
 
-nav ul {
-  list-style: none;
-  overflow: hidden;
+.fons-teal-400 {
+	background: #4dd4ac;
+}
+
+.dropdown-item:hover {
+	color: #fff;
+	background: #13795b;
+	border: 2px solid #13795b;
+	border-radius: 5px;
+}
+
+.dropdown-item:active {
+	color: #fff;
+	background: #13795b;
+	border: 2px solid #732edc;
+	border-radius: 5px;
+}
+
+div#carouselExample {
+    width: 1000px;
 }
 
 nav ul li {
-  float: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  padding-right: 50px;
 }
 
 nav ul li a {
