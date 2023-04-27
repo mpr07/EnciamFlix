@@ -179,14 +179,6 @@ nav ul li a {
   color: white;
 }
 
-.blog-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0px;
-  flex-wrap: wrap;
-}
-
 .blog-box {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -220,4 +212,35 @@ nav ul li a {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: auto;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
 }
