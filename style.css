@@ -163,7 +163,7 @@ nav ul li a {
   font-family: candara, arial, helvetica;
   margin: 0px;
   padding: 0px;
-  background-size: 100% 100%;
+  background-size: cover;
   background-image: url("fons-pelis-anime.jpeg");
 }
 
