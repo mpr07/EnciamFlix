@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EnciamFlix!</title>
+  <link rel="icon" type="image/png" href="../enciamet.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="peli-base">
+  <nav class="navbar navbar-expand-lg fons-teal-400">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../enciamflix_logo.png" width="auto" height="50px"
+          alt="logo de la companyia" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="../anime.html">Anime</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="../series.html">Series</a>
+          </li>
+          <li class="nav-item me-3 dropdown">
+            <a class="nav-link dropdown-toggle" href="../pelis.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pel·lícules
+            </a>
+            <ul class="dropdown-menu fons-teal-200">
+              <li>
+                <a class="dropdown-item" href="../pelis_anime.html">Pel·lícules Anime</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pelis_animacio.html">Pel·lícules Animació</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Altres pelis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-xxl-5">
+            <a class="nav-link disabled">Donacions</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca alguna cosa" aria-label="Search" />
+          <button class="btn btn-success" type="submit">Cercar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="head-img">
+    <img src="https://img.ccma.cat/multimedia/jpg/4/2/1669720266724.jpg">
+  </div>
+
+  <div class="video-container">
+    <video id="video" disableRemotePlayback src="https://mp4-down-high-es.ccma.cat/4/7/1669783992874.mp4">
+      <track label="Català" kind="subtitles" srclang="ca"
+        src="https://statics.ccma.cat/multimedia/vtt/2/8/1670522467382.vtt" default />
+    </video>
+    <span class="custom-loader"></span>
+    <div class="player-state">
+      <span class="state-btn state-backward">
+        <ion-icon name="play-back-outline"></ion-icon>
+        <span class="backward-duration">5</span>
+      </span>
+      <span class="main-state state-btn">
+        <ion-icon name="play-outline"></ion-icon>
+      </span>
+      <span class="state-btn state-forward">
+        <span class="forward-duration">5</span>
+        <ion-icon name="play-forward-outline"></ion-icon>
+      </span>
+    </div>
+    <div class="controls">
+      <div class="duration">
+        <div class="current-time"></div>
+        <div class="hover-time">
+          <span class="hover-duration"></span>
+        </div>
+        <div class="buffer"></div>
+      </div>
+      <div class="btn-controls">
+        <div class="btn-con">
+          <span class="play-pause control-btn">
+            <ion-icon name="play-outline"></ion-icon>
+          </span>
+          <span class="volume">
+            <span class="mute-unmute control-btn">
+              <ion-icon name="volume-high-outline"></ion-icon>
+            </span>
+            <div class="max-vol">
+              <div class="current-vol"></div>
+            </div>
+          </span>
+          <span class="time-container">
+            <span class="current-duration">0:00</span>
+            <span>/</span>
+            <span class="total-duration">0:00</span>
+          </span>
+        </div>
+        <div class="right-controls">
+          <span class="backward control-btn" title="5 backward">
+            <ion-icon name="play-back-outline"></ion-icon>
+          </span>
+          <span class="forward control-btn" title="5 forward">
+            <ion-icon name="play-forward-outline"></ion-icon>
+          </span>
+          <span class="mini-player control-btn">
+            <ion-icon name="albums-outline"></ion-icon>
+          </span>
+          <span class="settings control-btn">
+            <span class="setting-btn">
+              <ion-icon name="options-outline"></ion-icon>
+            </span>
+            <ul class="setting-menu">
+              <li data-value="0.25">0.25x</li>
+              <li data-value="0.5">0.5x</li>
+              <li data-value="0.75">0.75x</li>
+              <li data-value="1" class="speed-active">1x</li>
+              <li data-value="1.25">1.25x</li>
+              <li data-value="1.5">1.5x</li>
+              <li data-value="1.75">1.75x</li>
+              <li data-value="2">2x</li>
+            </ul>
+          </span>
+          <span class="theater-btn control-btn">
+            <span class="theater-default">
+              <ion-icon name="tablet-landscape-outline"></ion-icon>
+            </span>
+            <span class="theater-active">
+              <ion-icon name="tv-outline"></ion-icon>
+            </span>
+          </span>
+          <span class="fullscreen-btn control-btn" title="fullscreen">
+            <span class="full">
+              <ion-icon name="scan-outline"></ion-icon>
+            </span>
+            <span class="contract">
+              <ion-icon name="contract-outline"></ion-icon>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="../videoPlayer.js"></script>
+</body>
+<html>
+
+
+
+</body>
+
+</html>
