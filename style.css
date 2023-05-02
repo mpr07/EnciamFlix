@@ -1,4 +1,8 @@
 /*Bàsic*/
+@font-face {
+  font-family: Futura;
+  src: "futura_extra_black_condensed_bt.ttf";
+}
 * {
   padding: 0px;
   font-family: candara, arial, helvetica;
@@ -277,14 +281,36 @@ nav ul li a {
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
+    padding-top: 50px;
+    border-radius: 50px;
+    padding: 20px;
   }
+}
+
+.space {
+  height: 100px;
+  width: 100px;
+}
+
+.vidios-xd {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title_SX3 {
+  font-family: Futura;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 /* Video Player */
 
 .video-container {
-  width: 1024px;
-  height: calc((9 / 16) * 1024px);
+  width: 80%;
+  height: 100%;
   position: relative;
   color: #fff;
   overflow: hidden;
@@ -625,6 +651,49 @@ nav ul li a {
 }
 
 .show-setting-menu {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.subtitle-menu {
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  position: absolute;
+  bottom: 4.5rem;
+  transition: all 0.2s;
+  background: rgba(28, 28, 28, 0.9);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  border-radius: 5px;
+}
+
+.subtitle-menu li {
+  padding: 0.3rem 2rem;
+  margin: 0.5rem;
+  transition: all 0.2s;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.subtitle-active {
+  background: rgb(23, 23, 23);
+}
+
+.subtitle-menu li:hover {
+  background: rgb(31, 31, 31);
+}
+
+.subtitle-btn {
+  display: flex;
+}
+
+.show-subtitle-menu {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;

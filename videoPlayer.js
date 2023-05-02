@@ -25,6 +25,9 @@ const speedButtons = document.querySelectorAll(".setting-menu li");
 const backwardSate = document.querySelector(".state-backward");
 const forwardSate = document.querySelector(".state-forward");
 const loader = document.querySelector(".custom-loader");
+const subtitleBtn = document.querySelector(".subtitle-btn");
+let subtitleMenu = document.querySelector(".subtitle-menu");
+const subtitleButtons = document.querySelector(".subtitle-menu li");
 
 let isPlaying = false,
   mouseDownProgress = false,
@@ -162,6 +165,12 @@ settingsBtn.addEventListener("click", handleSettingMenu);
 
 speedButtons.forEach((btn) => {
   btn.addEventListener("click", handlePlaybackRate);
+});
+
+subtitleBtn.addEventListener("click", handleSubtitleMenu);
+
+subtitleButtons.forEach((btn) => {
+  btn.addEventListener("click", handleSubtitles);
 });
 
 function canPlayInit() {
@@ -422,6 +431,19 @@ function handlePlaybackRateKey(type = "") {
       btn.classList.add("speed-active");
     }
   });
+}
+
+function handleSubtitles(e) {
+  video.subtitles = parseFloat(e.target.dataset.value);
+  subtitleButtons.forEach((btn) => {
+    btn.classList.remove("subtitle-active");
+  });
+  e.target.classList.add("subtitle-active");
+  subtitleMenu.classList.remove("show-subtitle-menu");
+}
+
+function handleSubtitleMenu() {
+  subtitleMenu.classList.toggle("show-subtitle-menu");
 }
 
 function handleShorthand(e) {
