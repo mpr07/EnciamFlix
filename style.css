@@ -1,8 +1,9 @@
 /*Bàsic*/
 @font-face {
   font-family: Futura;
-  src: "futura_extra_black_condensed_bt.ttf";
+  src: "Fonts/futura_extra_black_condensed_bt.ttf";
 }
+
 * {
   padding: 0px;
   font-family: candara, arial, helvetica;
@@ -276,7 +277,7 @@ nav ul li a {
   background-color: #46609f;
 }
 
-@media only screen and (max-width: 1920px) {
+@media (width: 1000px) {
   .head-img img {
     padding-left: 100px;
     padding-right: 100px;
@@ -285,11 +286,16 @@ nav ul li a {
     border-radius: 50px;
     padding: 20px;
   }
+
+  .info-img {
+    width: 60%;
+    height: 60%;
+  }
 }
 
 .space {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .vidios-xd {
@@ -304,6 +310,64 @@ nav ul li a {
   color: white;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.descripció {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: Futura;
+  color: white;
+}
+
+.informació {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.quadre-info {
+  background: #9f8446;
+  border: 5px solid #000;
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.info-img {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.text-info-title {
+  color: black;
+  position: relative;
+  display: flex;
+}
+
+.text-info-title h3 {
+  font-family: Futura;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 100px;
 }
 
 /* Video Player */
