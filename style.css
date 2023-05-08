@@ -277,10 +277,21 @@ nav ul li a {
   background-color: #46609f;
 }
 
+.head-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.head-img img {
+  width: 100%;
+  padding-top: 50px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
 @media (width: 1000px) {
   .head-img img {
-    padding-left: 100px;
-    padding-right: 100px;
     width: 100%;
     padding-top: 50px;
     border-radius: 50px;
@@ -290,6 +301,7 @@ nav ul li a {
   .info-img {
     width: 60%;
     height: 60%;
+    display: flex;
   }
 }
 
@@ -325,11 +337,8 @@ nav ul li a {
 
 .informació {
   display: flex;
-  position: relative;
   justify-content: center;
-  align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 100%;
 }
 
 .quadre-info {
@@ -337,34 +346,27 @@ nav ul li a {
   border: 5px solid #000;
   display: flex;
   position: relative;
-  padding-left: 50px;
-  padding-right: 100px;
-  width: 100%;
-  height: 100%;
+  width: 80%;
 }
 
 .info-img {
   display: flex;
   position: relative;
   justify-content: left;
-  align-items: left;
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 50px;
-  padding: 20px;
-  width: 20%;
+  padding: 13px;
+  width: 30%;
 }
 
 .text-info-title {
   color: black;
-  position: relative;
-  display: flex;
 }
 
 .text-info-title h3 {
   font-family: Futura;
   color: black;
-  text-align: center;
   padding-top: 30px;
   padding-left: 100px;
 }
