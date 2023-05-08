@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/demo.css" />
+</head>
+
+<body>
+    <video controls crossorigin playsinline data-poster="https://img.ccma.cat/multimedia/jpg/5/0/1669719768005.jpg"
+        id="player">
+        <!-- Video files -->
+        <source src="https://mp4-down-medium-es.ccma.cat/7/6/1669783913067.mp4" type="video/mp4" size="480" />
+        <source src="https://mp4-down-high-es.ccma.cat/4/7/1669783992874.mp4" type="video/mp4" size="720" />
+
+        <!-- Caption files -->
+        <track kind="captions" label="English" srclang="en"
+            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
+        <track kind="captions" label="Français" srclang="fr"
+            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+        <track kind="captions" label="Català" srclang="ca"
+            src="https://statics.ccma.cat/multimedia/vtt/2/8/1670522467382.vtt" />
+
+        <!-- Fallback for browsers that don't support the <video> element -->
+        <a href="https://mp4-down-medium-es.ccma.cat/7/6/1669783913067.mp4" download>Download</a>
+    </video>
+
+    <script src="https://cdn.plyr.io/3.6.4/demo.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
