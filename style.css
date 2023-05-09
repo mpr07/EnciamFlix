@@ -386,7 +386,6 @@ nav ul li a {
 
 #box1 {
   grid-column: 1;
-  border: none;
   grid-row: 1 / span 2;
   width: 100%;
   height: auto;
