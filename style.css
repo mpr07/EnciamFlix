@@ -405,12 +405,34 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+/*  SHA DE MIRAR AMB CAUTELA I FERHO AMB PRECISIÓ
 @media (width: 1440px) {
-  #box1 {
-    display: block;
-    width: 60%;
+  .caixa {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 25% ;
+    grid-column-gap: 5px;
   }
-}
+  #box1 {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+  }
+  #box2 {
+    grid-column: 2;
+    color: white;
+    font-family: Futura;
+    text-align: center;
+  }
+  #box3 {
+    grid-column: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Futura;
+    color: white;
+    font-size: 1.5rem;
+  }
+} */ 
 
 /* .text-info-title {
   color: black;
