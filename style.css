@@ -370,7 +370,6 @@ nav ul li a {
 }
 
 .box{
-  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,7 +377,6 @@ nav ul li a {
 
 #box1{
   grid-column: 1;
-  border: none;
   grid-row: 1 /span 2;
 }
 #box2{
@@ -386,13 +384,14 @@ nav ul li a {
   color: white;
   font-family: Futura;
   text-align: center;
-  border: none;
 }
 #box3{
-  background-color: yellow;
   grid-column: 2 /span 2;
   justify-content: flex-start;
   align-items: flex-start;
+  font-family: Futura;
+  color:white;
+  font-size: 1.5rem;
 }
 
 
