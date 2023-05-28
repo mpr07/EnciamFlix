@@ -226,13 +226,4 @@ input {
 	width: 40px;
 	color: #5865F2;
 }
-.social-container a i {
-	font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    background: none;
-}
 
-#discord{
-	font-size: 1.5rem;
-}
