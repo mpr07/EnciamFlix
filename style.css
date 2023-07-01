@@ -10,13 +10,6 @@
   box-sizing: border-box;
 }
 
-#menu{
-  position: fixed;
-  overflow: hidden;
-  width:100%;
-  top:0;
-}
-
 .menu-base {
   font-family: candara, arial, helvetica;
   margin: 0px;
