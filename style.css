@@ -12,6 +12,8 @@
 
 #menu{
   position: fixed;
+  overflow: hidden;
+  width:100%;
 }
 
 .menu-base {
