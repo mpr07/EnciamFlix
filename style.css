@@ -400,6 +400,30 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+.container-title-index {
+  padding: 0 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+/*Footer*/
+
+.container2 {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.discord-widget {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  align-items: right;
+}
+
 @media (min-width: 1000px) {
   #box1 {
     grid-row: 1 / span 2;
@@ -415,14 +439,3 @@ nav ul li a {
     grid-column: 2 / span 2;
   }
 }
-
-/* .text-info-title {
-  color: black;
-}
-
-.text-info-title h3 {
-  font-family: Futura;
-  color: black;
-  padding-top: 30px;
-  padding-left: 100px;
-} */
