@@ -23,6 +23,7 @@ a {
 }
 /*Base pàgina*/
 .base {
+  font-family: candara, arial, helvetica;
   color: #ffffffb3;
   size: 80%;
   position: center;
@@ -140,7 +141,7 @@ img.caroselimg {
 }
 
 nav ul li {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat;
   font-size: 20px;
 }
 
@@ -416,7 +417,7 @@ nav ul li a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: candara, "Open Sans", sans-serif;
 }
 /*:::::Pie de Pagina*/
 .pie-pagina {
