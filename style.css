@@ -476,6 +476,13 @@ nav ul li a {
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+
+.pie-pagina .grupo-3 {
+  background-color: #22303f;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
