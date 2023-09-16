@@ -492,6 +492,33 @@ nav ul li a {
   }
 }
 
+/*Paginació*/
+
+.pagines {
+  margin: 20px 0;
+}
+
+.pagines ul {
+  list-style: none;
+  text-align: center;
+}
+
+.pagines ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pagines ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  background: #d17921;
+}
+
+.pagines ul li a:hover {
+  background: #fd5065;
+}
+
 .container2 {
   width: auto;
   max-width: 680px;
