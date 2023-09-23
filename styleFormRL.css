@@ -228,3 +228,7 @@ input {
 	color: #5865F2;
 }
 
+a{
+	color: none;
+	text-decoration: none;
+}
