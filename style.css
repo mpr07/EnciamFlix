@@ -299,12 +299,6 @@ nav ul li a {
     padding: 20px;
   }
 
-  .info-img {
-    width: 60%;
-    height: 60%;
-    display: flex;
-  }
-
   .caixa {
     display: block;
   }
@@ -364,6 +358,7 @@ nav ul li a {
   padding-bottom: 30px;
   padding: 13px;
   padding-top: 20%;
+  padding-right: 120px;
 }
 
 .caixa {
