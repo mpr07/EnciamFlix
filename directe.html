@@ -19,6 +19,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/02232aa1a7.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -82,78 +83,20 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="px-lg-5">
+    <div class="head-img">
+        <a href=""><img src=""></a> <!--Posar aquí link head img i enllaç-->
+    </div>
+    <div class="space"></div>
+    <h1 class="Title_SX3">Camel TV</h1> <!--Posar títol-->
+    <div class="vidios-xd">
+        <div class="video-container">
+            <video class="afterglow" id="myvideo" width="1280" height="720" controls></video>
 
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="titol_pag">Anime</h1>
-                        <p class="text_pag">
-                            Benvinguts a l'apartat d'anime!!
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="row">
-                <!-- Gallery item -->
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                    <div class="bg-white rounded shadow-sm"><img
-                            src="https://img.ccma.cat/multimedia/jpg/9/9/1679305161599.jpg" alt="Pòster Black Clover"
-                            class="img-fluid card-img-top">
-                        <!------------>
-                        <div class="p-4">
-                            <h5> <a href="Anime/Black Clover/blackClover.html" class="text-dark">Black Clover</a></h5>
-                            <a href="Anime/Black Clover/blackClover.html" class="btn btn-warning">Més Info</a>
-                        </div>
-                        <!------------>
-                    </div>
-                </div>
-                <!-- Gallery item -->
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                    <div class="bg-white rounded shadow-sm"><img
-                            src="https://img.ccma.cat/multimedia/jpg/9/9/1665050946099.jpg"
-                            alt="Pòster Els guardians de la nit" class="img-fluid card-img-top">
-                        <!------------>
-                        <div class="p-4">
-                            <h5> <a href="Anime/Els guardians de la nit/guardians.html" class="text-dark">Guardians de
-                                    la nit</a></h5>
-                            <a href="Anime/Els guardians de la nit/guardians.html" class="btn btn-warning">Més Info</a>
-                        </div>
-                        <!------------>
-                    </div>
-                </div>
-                <!-- Gallery item -->
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                    <div class="bg-white rounded shadow-sm"><img
-                            src="https://img.ccma.cat/multimedia/jpg/7/8/1664878310987.jpg" alt="Pòster Haikyu!"
-                            class="img-fluid card-img-top">
-                        <!------------>
-                        <div class="p-4">
-                            <h5> <a href="Anime/Haikyu/haikyu.html" class="text-dark">Haikyu!</a></h5>
-                            <a href="Anime/Haikyu/haikyu.html" class="btn btn-warning">Més Info</a>
-                        </div>
-                        <!------------>
-                    </div>
-                </div>
-                <!-- Gallery item -->
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                    <div class="bg-white rounded shadow-sm"><img
-                            src="https://img.ccma.cat/multimedia/jpg/0/9/1665131842590.jpg" alt="Pòster Yu Yu Hakusho"
-                            class="img-fluid card-img-top">
-                        <!------------>
-                        <div class="p-4">
-                            <h5> <a href="Anime/Yu Yu Hakusho: Els defensors del més enllà/yyh.html"
-                                    class="text-dark">Yu Yu Hakusho: Els defensors del més enllà</a></h5>
-                            <a href="Anime/Yu Yu Hakusho: Els defensors del més enllà/yyh.html"
-                                class="btn btn-warning">Més Info</a>
-                        </div>
-                        <!------------>
-                    </div>
-                </div>
-            </div>
+            </video>
         </div>
+    </div>
+    <div class="space"></div>
+    </div>
 </body>
 <footer class="pie-pagina">
     <div class="grupo-1">
@@ -186,5 +129,82 @@
             Aquesta web només allotja vídeos de servidors totalment aliens a nosaltres.</small>
     </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Hora d'inici del primer vídeo (17:48 CET del 16 de desembre del 2023, zona horària de Catalunya)
+        const startTimeVideo1 = new Date("2023-12-16T20:30:00");
+        startTimeVideo1.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        // Hora d'inici del segon vídeo (17:50 CET del 16 de desembre del 2023, zona horària de Catalunya)
+        const startTimeVideo2 = new Date("2023-12-16T20:55:00");
+        startTimeVideo2.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        const startTimeVideo3 = new Date("2023-12-16T21:19:00");
+        startTimeVideo3.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        const startTimeVideo4 = new Date("2023-12-16T21:19:00");
+        startTimeVideo4.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        const startTimeVideo5 = new Date("2023-12-16T21:19:00");
+        startTimeVideo5.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        const startTimeVideo6 = new Date("2023-12-16T21:19:00");
+        startTimeVideo6.toLocaleString('en-US', { timeZone: 'Europe/Madrid' });
+
+        // URL dels vídeos en directe
+        const videoUrls = [
+            "https://mp4-down-high-es.ccma.cat/7/4/1468333243847.mp4", /*1*/
+            "https://mp4-down-high-es.ccma.cat/1/4/1468333324841.mp4", /*2*/
+            "https://mp4-down-high-es.ccma.cat/1/2/1701142642321.mp4", /*3*/
+            "https://mp4-down-high-es.ccma.cat/9/0/1664754375509.mp4", /*4*/
+            "https://mp4-down-high-es.ccma.cat/5/5/1664754219355.mp4", /*5*/
+            "https://mp4-down-high-es.ccma.cat/8/2/1679624680628.mp4", /*6*/
+        ];
+
+        // Funció per iniciar la reproducció del vídeo amb el temps passat des de l'inici
+        function startPlayback(startTime, videoIndex) {
+            const videoElement = document.getElementById("myvideo");
+
+            // Obté el temps passat des de l'inici
+            const elapsedTime = Math.floor((new Date() - startTime) / 1000);
+
+            // Construeix la URL del vídeo amb el temps passat des de l'inici
+            const videoUrl = `${videoUrls[videoIndex]}#t=${elapsedTime}`;
+
+            videoElement.src = videoUrl;
+
+            // Inicia la reproducció
+            videoElement.play();
+            console.log("Iniciant la reproducció en directe des de " + elapsedTime + " segons...");
+        }
+
+        // Comprova si ja ha arribat l'hora d'inici del primer vídeo
+        const currentTime = new Date();
+        if (currentTime >= startTimeVideo1) {
+            // Si ja ha arribat l'hora d'inici del primer vídeo, comença la reproducció amb aquest vídeo
+            startPlayback(startTimeVideo1, 0);
+        } else {
+            // Si encara no ha arribat l'hora d'inici del primer vídeo, espera fins a l'arribada
+            const timeUntilStart = Math.floor((startTimeVideo1 - currentTime) / 1000);
+            setTimeout(() => startPlayback(startTimeVideo1, 0), timeUntilStart * 1000);
+        }
+
+        // Configura un temporitzador per iniciar el segon vídeo a l'hora d'inici específica
+        const timeUntilStartVideo2 = Math.floor((startTimeVideo2 - currentTime) / 1000);
+        setTimeout(() => startPlayback(startTimeVideo2, 1), timeUntilStartVideo2 * 1000);
+
+        const timeUntilStartVideo3 = Math.floor((startTimeVideo3 - currentTime) / 1000);
+        setTimeout(() => startPlayback(startTimeVideo3, 2), timeUntilStartVideo3 * 1000);
+
+        const timeUntilStartVideo4 = Math.floor((startTimeVideo4 - currentTime) / 1000);
+        setTimeout(() => startPlayback(startTimeVideo4, 2), timeUntilStartVideo4 * 1000);
+
+        const timeUntilStartVideo5 = Math.floor((startTimeVideo5 - currentTime) / 1000);
+        setTimeout(() => startPlayback(startTimeVideo5, 2), timeUntilStartVideo5 * 1000);
+
+        const timeUntilStartVideo6 = Math.floor((startTimeVideo6 - currentTime) / 1000);
+        setTimeout(() => startPlayback(startTimeVideo6, 2), timeUntilStartVideo6 * 1000);
+    });
+</script>
 
 </html>
