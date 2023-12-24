@@ -1,16 +1,15 @@
-<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+    <!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EnciamFlix!</title>
-    <link rel="icon" type="image/png" href="Imatges/enciamet.png" />
+    <link rel="icon" type="image/png" href="../../Imatges/enciamet.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" type="text/css" href="../../videoPlayer.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
@@ -19,18 +18,17 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/02232aa1a7.js" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/afterglowplayer@1.1.0/dist/afterglow.min.js"></script>
 </head>
-
-<body class="anime-base">
+    <body class="peli-base">
     <nav class="navbar navbar-expand-lg fons-teal-400">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="Imatges/enciamflix_logo.png" width="auto" height="50px"
-                    alt="logo de la companyia" /></a>
+            <a class="navbar-brand" href="../../index.html"><img src="../../Imatges/enciamflix_logo.png" width="auto"
+                    height="50px" alt="logo de la companyia" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,10 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-3">
-                        <a class="nav-link active" aria-current="page" href="anime.html">Anime</a>
+                        <a class="nav-link active" aria-current="page" href="../../anime.html">Anime</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" href="series.html">Series</a>
+                        <a class="nav-link" href="../../series.html">Series</a>
                     </li>
                     <li class="nav-item me-3 dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
@@ -51,12 +49,12 @@
                         </a>
                         <ul class="dropdown-menu fons-teal-200">
                             <li>
-                                <a class="dropdown-item" href="pelis_anime.html">Pel·lícules Anime</a>
+                                <a class="dropdown-item" href="../../pelis_anime.html">Pel·lícules Anime</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pelis_animacio.html">Pel·lícules Animació</a>
+                                <a class="dropdown-item" href="../../pelis_animacio.html">Pel·lícules Animació</a>
                             </li>
-                            <li><a class="dropdown-item" href="pelis.html">Altres pelis</a></li>
+                            <li><a class="dropdown-item" href="../../pelis.html">Altres pelis</a></li>
                         </ul>
                     </li>
                     <li class="nav-item me-3 dropdown">
@@ -66,10 +64,10 @@
                         </a>
                         <ul class="dropdown-menu fons-teal-200">
                             <li>
-                                <a class="dropdown-item" href="animacio.html">Animació</a>
+                                <a class="dropdown-item" href="../../animacio.html">Animació</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="agraiments.html">Agraïments</a>
+                                <a class="dropdown-item" href="../../agraiments.html">Agraïments</a>
                             </li>
                         </ul>
                     </li>
@@ -84,26 +82,49 @@
     </nav>
 
     <div class="head-img">
-        <a href=""><img src=""></a> <!--Posar aquí link head img i enllaç-->
+        <a href="danysPerjudicis.html"><img src="https://img.ccma.cat/multimedia/jpg/0/7/1672264047270.jpg"></a>
     </div>
     <div class="space"></div>
-    <h1 class="Title_SX3">Camel TV</h1> <!--Posar títol-->
+    <h1 class="Title_SX3">JA CONEIX "L'ANGUILA", SUPOSO. [T5 - Episodi 2]</h1>
     <div class="vidios-xd">
         <div class="video-container">
-            <video id="myvideo" width="1280" height="720" controls></video>
-
+            <video class="afterglow" id="myvideo" width="1280" height="720"
+                poster="https://img.ccma.cat/multimedia/jpg/4/8/1674597226984.jpg">
+                <source type="video/mp4" src="https://mp4-down-medium-es.ccma.cat/5/8/1674590041585.mp4" />
+                <source type="video/mp4" src="https://mp4-down-high-es.ccma.cat/0/6/1674590093160.mp4"
+                    data-quality="hd" />
             </video>
         </div>
     </div>
     <div class="space"></div>
+    <div class="informació">
+        <div class="caixa">
+            <div class="box" id="box1">
+                <img class="info-img" src="https://img.ccma.cat/multimedia/jpg/7/2/1672264432527.jpg">
+            </div>
+            <div class="box" id="box2">
+                <h1>Ja coneix "L'anguila", suposo.</h1>
+            </div>
+            <div class="box" id="box3">
+                <p>
+                    <b>Nom Original:</b> <i style="color: black; font-size: 20px;"> *Have You Met the Eel Yet?* </i>
+                    <!--Incrustar Nom Original--><br>
+                    <b>Sinopsi:</b> <i style="color: black; font-size: 20px;"> *Mentre es preparen per enfrontar-se en el cas de mort per negligència contra el ciberhacker Channing McClaren, la preocupació de l'Ellen (Rose Byrne) és que l'estreta relació del jutge i la Patty (Glenn Close) jugui en contra seu. Alhora que intenta igualar les possibilitats per guanyar el cas, fins i tot quan comença a dubtar d'en McClaren, l'Ellen recorda el gran poder manipulador de la Patty.</i> <!--Incrustar Sinopsi--><br>
+                    <b>Data d'emissió original:</b> <i style="color: black; font-size: 20px;"> 18 de juliol del 2012</i>
+                    <!--Incrustar Data--><br>
+                    <b>Data d'emissió en català:</b> <i style="color: black; font-size: 20px;">24 de febrer del 2014</i>
+                    <!--Incrustar Data Català--><br>
+                </p>
+            </div>
+        </div>
     </div>
 </body>
-<footer class="pie-pagina">
+    <footer class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
             <figure>
                 <a href="#">
-                    <img src="Imatges/enciamflix_logo.png" alt="Logo de SLee Dw">
+                    <img src="../../Imatges/enciamflix_logo.png" alt="Logo de SLee Dw">
                 </a>
             </figure>
         </div>
@@ -129,6 +150,5 @@
             Aquesta web només allotja vídeos de servidors totalment aliens a nosaltres.</small>
     </div>
 </footer>
-<script src="directe.js"></script>
-
-</html>
+    </html>
+    
