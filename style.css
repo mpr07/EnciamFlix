@@ -501,6 +501,7 @@ nav ul li a {
 .pagines ul li {
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .pagines ul li a {
