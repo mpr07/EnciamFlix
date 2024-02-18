@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/afterglowplayer@1.1.0/dist/afterglow.min.js"></script>
 </head>
 
@@ -83,18 +84,16 @@
     </nav>
 
     <div class="head-img">
-        <a href="../../pelis_anime.html"><img
-                src="https://i.ibb.co/ykCXb3W/steins-gate-l-area-de-carrega-del-deja-vu.png"></a>
+        <a href="ranma.html"><img src="https://img.ccma.cat/multimedia/jpg/6/9/1675082522196.jpg"></a>
     </div>
     <div class="space"></div>
-    <h1 class="Title_SX3">STEINS GATE: L'ÀREA DE CÀRREGA DEL DÉJÀ-VU</h1>
+    <h1 class="Title_SX3">QUI TÉ AMORS, TÉ MALDECAPS [T1 - Episodi 5]</h1>
     <div class="vidios-xd">
         <div class="video-container">
             <video class="afterglow" id="myvideo" width="1280" height="720"
-                poster="https://img.ccma.cat/multimedia/jpg/0/9/1704717314390.jpg">
-                <source type="video/mp4" src="https://mp4-down-medium-es.ccma.cat/8/4/1704858942648.mp4" />
-                <source type="video/mp4" src="https://mp4-down-high-es.ccma.cat/2/9/1704859001592.mp4"
-                    data-quality="hd" />
+                poster="https://img.ccma.cat/multimedia/jpg/0/5/1675152816850.jpg">
+                <source type="application/x-mpegURL"
+                    src="https://adaptive-es.ccma.cat/4/1/6199714/1687576356776/stream.m3u8" />
             </video>
         </div>
     </div>
@@ -102,26 +101,26 @@
     <div class="informació">
         <div class="caixa">
             <div class="box" id="box1">
-                <img class="info-img" src="https://img.ccma.cat/multimedia/jpg/9/9/1704718332399.jpg">
+                <img class="info-img" src="https://img.ccma.cat/multimedia/jpg/0/6/1675082457760.jpg">
             </div>
             <div class="box" id="box2">
-                <h1>Steins gate: l'àrea de càrrega del déjà-vu</h1>
+                <h1>Qui té amors, té maldecaps</h1>
             </div>
             <div class="box" id="box3">
                 <p>
-                    <b>Nom Original:</b> <i style="color: black; font-size: 20px;"> *劇場版 シュタインズ・ゲート 負荷領域のデジャヴ ,
-                        Gekijōban Shutainzu Gēto: Fuka Ryōiki no Dejavu* </i>
+                    <b>Nom Original:</b> <i style="color: black; font-size: 20px;"> *"Kotsu Made Aishite? Akane Koi no
+                        Fukuzatsu Kossetsu" (骨まで愛して?あかね恋の複雑骨折)</i>
                     <!--Incrustar Nom Original--><br>
-                    <b>Sinopsi:</b> <i style="color: black; font-size: 20px;"> *Agost de l'any 2011. Ha passat un any
-                        d'ençà que en Rintarô Okabe va aconseguir passar a la línia d'univers de l'Steins Gate, un món
-                        on ell no ha existit mai, però els seus amics, d'alguna manera, el recorden i el necessiten.
-                        Seria bo fer-lo tornar? Els salts temporals d'en Rintarô li han passat factura, i provoquen una
-                        crisi que altera la vida dels seus amics. La Suzuha arriba del futur amb un pla per reconduir la
-                        situació, però això posa la Kurisu en un dilema personal i científic.</i>
-                    <!--Incrustar Sinopsi--><br>
-                    <b>Data d'emissió original:</b> <i style="color: black; font-size: 20px;"> 20 d'abril del 2013</i>
+                    <b>Sinopsi:</b> <i style="color: black; font-size: 20px;">L'Akane s'està entrenant amb el seu pare
+                        i, després de recordar com és de desagradable en Ranma, el deixa fora de combat. La Kasumi li fa
+                        prometre que mai més tornarà a pegar un home però, després, l'Akane es troba en Ranma pel carrer
+                        i, tot i que intenta controlar-se, acaba pegant-lo i acompanyant-lo al consultori del Dr. Tompu.
+                        En Ranma s'assabenta que a l'Akane li fa gràcia el Dr. Tompu, però que el metge està enamorat
+                        d'una altra noia.</i> <!--Incrustar Sinopsi--><br>
+                    <b>Data d'emissió original:</b> <i style="color: black; font-size: 20px;"> 13 de maig del 1989</i>
                     <!--Incrustar Data--><br>
-                    <b>Data d'emissió en català:</b> <i style="color: black; font-size: 20px;">14 de gener del 2024</i>
+                    <b>Data d'emissió en català:</b> <i style="color: black; font-size: 20px;">18 de setembre del
+                        1995</i>
                     <!--Incrustar Data Català--><br>
                 </p>
             </div>
@@ -159,5 +158,14 @@
             Aquesta web només allotja vídeos de servidors totalment aliens a nosaltres.</small>
     </div>
 </footer>
+
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<script>
+    var player = videojs('hls-example');
+    player.play();
+</script>
 
 </html>
