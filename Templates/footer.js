@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2023 <b>EnciamFlix</b></small>
+            <small>&copy; 2024 <b>EnciamFlix</b></small>
         </div>
         <div class="grupo-3">
             <small>Tots els vídeos allotjats en aquesta pàgina web pertanyen a la CCMA. <br>
